@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cmsc434-kitchen</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="screen-wrapper">
+    <div id="device">
+
+      <!-- Page Content -->
+      <div id="content">
+        <div class="page active" id="page-text">Text Page</div>
+        <div class="page" id="page-lr">LR Page</div>
+        <div class="page" id="page-colors">Colors Page</div>
+        <div class="page" id="page-profile">Profile Page</div>
+        <div class="page" id="page-choices">Choices Page</div>
+        <div class="page" id="page-todo">ToDo Page</div>
+      </div>
+
+      <!-- Tab Bar -->
+      <nav id="tab-bar">
+        <button class="tab active" data-target="page-text">Text</button>
+        <button class="tab" data-target="page-lr">LR</button>
+        <button class="tab" data-target="page-colors">Colors</button>
+        <button class="tab" data-target="page-profile">Profile</button>
+        <button class="tab" data-target="page-choices">Choices</button>
+        <button class="tab" data-target="page-todo">ToDo</button>
+      </nav>
+
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
