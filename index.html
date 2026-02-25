@@ -12,6 +12,7 @@
 
       <!-- Page Content -->
       <div id="content">
+
         <div class="page active" id="page-text">
             <h1>-Text Screen-</h1>
             <p>Please note that this font size is too small to read easily on this device for many...</p>
@@ -24,10 +25,36 @@
             <p>Please note that this font size is too small to read easily on this device for many...</p>
             <p>Please note that this font size is too small to read easily on this device for many...</p>
         </div>
+
         <div class="page" id="page-lr">LR Page</div>
+
         <div class="page" id="page-colors">Colors Page</div>
+
         <div class="page" id="page-profile">Profile Page</div>
-        <div class="page" id="page-choices">Choices Page</div>
+
+        <div class="page" id="page-choices">
+            <h1>-Choices Screen-</h1>
+
+            <p class="choices-label">Camera Type #1:</p>
+            <label class="radio-label">
+                <input type="radio" name="camera1" value="dSLR" checked> dSLR
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="camera1" value="Mirrorless"> Mirrorless
+            </label>
+
+            <p class="choices-label">Camera Type #2:</p>
+            <select id="camera2">
+                <option value="dSLR">dSLR</option>
+                <option value="Mirrorless">Mirrorless</option>
+                <option value="Point-and-Shoot">Point-and-Shoot</option>
+            </select>
+
+            <div id="choices-result"></div>
+
+            <button id="choices-btn">Print something based on above choices...</button>
+        </div>
+
         <div class="page" id="page-todo">ToDo Page</div>
       </div>
 
