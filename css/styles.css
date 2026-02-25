@@ -31,11 +31,25 @@ body {
 .page {
   display: none;
   padding: 20px;
-  height: 100%;
+  min-height: 100%;
 }
 
 .page.active {
   display: block;
+}
+
+#page-text {
+  background-color: pink;
+}
+
+#page-text h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#page-text p {
+  font-size: 24px;
+  margin-bottom: 60px;
 }
 
 #tab-bar {
