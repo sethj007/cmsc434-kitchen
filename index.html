@@ -30,7 +30,22 @@
 
         <div class="page" id="page-colors">Colors Page</div>
 
-        <div class="page" id="page-profile">Profile Page</div>
+        <div class="page" id="page-profile">
+            <h1>-User Profile-</h1>
+
+            <img src="https://media.discordapp.net/attachments/936456172859449395/1476417040427253871/image.png?ex=69a10c04&is=699fba84&hm=3322006e839775361ea48068e5af68f40877170e08538881ce8133e00b1ba304&=&format=webp&quality=lossless&width=620&height=595" 
+                id="profile-img" 
+                class="centered-img" 
+                alt="Profile"
+                onClick="document.getElementById('thealert').style.display='block';">
+
+            <p class="profile-subtext">Mr. Lin</p>
+
+            <div id="thealert" class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                AAAAAAAAAAAAAAAAAA! Don't click me!
+            </div>
+        </div>
 
         <div class="page" id="page-choices">
             <h1>-Choices Screen-</h1>
@@ -55,7 +70,30 @@
             <button id="choices-btn">Print something based on above choices...</button>
         </div>
 
-        <div class="page" id="page-todo">ToDo Page</div>
+        <div class="page" id="page-todo">
+            <div class="todo-header">
+            <h1>-To Do List-</h1>
+            <input type="text" id="myInput" placeholder="New Entry...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+
+        <ul id="myUL">
+            <li>Register for classes</li>
+            <li>Start Phase 1.1.1</li>
+            <li>Start Phase 1.1.2</li>
+            <li>Start Phase 1.2</li>
+            <li>Complete Phase 1.1.1</li>
+            <li>Complete Phase 1.2</li>
+        </ul>
+        </div>
+
+
+
+      </div>
+
+      <div id="toast-bar" class="hidden">
+        <span id="toast-text"></span>
+        <span class="close-toast" onclick="closeToast()">&times;</span>
       </div>
 
       <!-- Tab Bar -->
