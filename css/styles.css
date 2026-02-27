@@ -42,6 +42,45 @@ body {
   background-color: pink;
 }
 
+#page-lr{
+  background-color: pink;
+}
+
+#page-lr > p {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+#page-colors {
+  background-color: pink;
+  width: 100%;
+}
+
+#page-colors h2 {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.chart-container{
+  width: 600px;
+  height: 600px;
+  margin: 40px auto;
+  
+}
+
+#page-colors #hello-color{
+  margin-top: 3rem;
+  background-color: black;
+  color: yellow;
+  text-align: center;
+}
+#page-colors #hi-color{
+  background-color: yellow;
+  color:purple;
+  text-align: center;
+}
+
 #page-text h1 {
   font-size: 32px;
   margin-bottom: 20px;
@@ -58,6 +97,11 @@ body {
   background-color: #f8f8f8;
   height: 120px;
 }
+#tab-bar img{
+  width: 48px;
+  height: 48px;
+ object-fit: contain;
+}
 
 .tab {
   flex: 1;
@@ -67,6 +111,10 @@ body {
   font-size: 18px;
   color: #888;
   cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tab.active {

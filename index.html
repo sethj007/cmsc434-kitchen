@@ -26,20 +26,32 @@
             <p>Please note that this font size is too small to read easily on this device for many...</p>
         </div>
 
-        <div class="page" id="page-lr">LR Page</div>
+        <div class="page" id="page-lr">
+          <h1>-Text In Lower Right-</h1>
+          <p>Down Here</p>
+        </div>
 
-        <div class="page" id="page-colors">Colors Page</div>
+        <div class="page" id="page-colors">
+          <h1>-Colors Example-</h1>
+          <h2 id="hello-color">Hello There</h2>
+          <h2 id="hi-color">Hi Again</h2>
+
+           <div class="chart-container">
+              <canvas id="pie-chart"></canvas>
+           </div>
+
+        </div>
 
         <div class="page" id="page-profile">
             <h1>-User Profile-</h1>
 
-            <img src="https://media.discordapp.net/attachments/936456172859449395/1476417040427253871/image.png?ex=69a10c04&is=699fba84&hm=3322006e839775361ea48068e5af68f40877170e08538881ce8133e00b1ba304&=&format=webp&quality=lossless&width=620&height=595" 
+            <img src="https://www.cs.umd.edu/class/spring2026/cmsc434/P1_2/SmileyFace.png" 
                 id="profile-img" 
                 class="centered-img" 
                 alt="Profile"
                 onClick="document.getElementById('thealert').style.display='block';">
 
-            <p class="profile-subtext">Mr. Lin</p>
+            <p class="profile-subtext">Smiley J. Smile</p>
 
             <div id="thealert" class="alert">
                 <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
@@ -98,16 +110,34 @@
 
       <!-- Tab Bar -->
       <nav id="tab-bar">
-        <button class="tab active" data-target="page-text">Text</button>
-        <button class="tab" data-target="page-lr">LR</button>
-        <button class="tab" data-target="page-colors">Colors</button>
-        <button class="tab" data-target="page-profile">Profile</button>
-        <button class="tab" data-target="page-choices">Choices</button>
-        <button class="tab" data-target="page-todo">ToDo</button>
+        <button class="tab active" data-target="page-text">
+          <img src="icons/texticon.png" />
+          Text
+        </button>
+        <button class="tab" data-target="page-lr">
+          <img src="icons/turn-right.png" />
+          LR</button>
+        <button class="tab" data-target="page-colors">
+          <img src="icons/art.png" />
+          Colors
+        </button>
+        <button class="tab" data-target="page-profile">
+          <img src="icons/user.png" />
+          Profile
+        </button>
+        <button class="tab" data-target="page-choices">
+          <img src="icons/choose.png" />
+          Choices</button>
+        <button class="tab" data-target="page-todo">
+          <img src="icons/to-do-list.png">
+          ToDo</button>
       </nav>
 
     </div>
   </div>
+  <script src="js/chart.js"></script>
+  <script src="js/chartjs-plugin-datalabels.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 </html>

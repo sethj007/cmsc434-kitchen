@@ -1,3 +1,58 @@
+Chart.register(ChartDataLabels);
+
+const pieCtx = document.getElementById('pie-chart');
+
+if (pieCtx) {
+  new Chart(pieCtx, {
+    type: 'pie',
+    data: {
+      labels: ['Roses', 'Violets', 'Tulips'],
+      datasets: [{
+        data: [300, 500, 100],
+        backgroundColor: [
+          'Red',
+          'Violet',
+          'Yellow'  
+        ],
+        borderColor: 'White', 
+        borderWidth: 2
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      layout: {
+        padding: 40 
+      },
+      plugins: {
+        legend: {
+          position: 'bottom',
+          align: 'start', 
+          labels: {
+            font: { size: 16 }
+          }
+        },
+        datalabels: {
+          color: '#000000',
+          font: {
+            weight: 'bold',
+            size: 14
+          },
+          formatter: function(value) {
+            return value; 
+          },
+          anchor: 'end', 
+          align: 'end', 
+          offset: 5      
+        }
+      }
+    }
+  });
+}
+
+
+
+
 const tabs = document.querySelectorAll('.tab');
 const pages = document.querySelectorAll('.page');
 
